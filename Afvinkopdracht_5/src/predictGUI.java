@@ -24,6 +24,7 @@ public class predictGUI extends JFrame {
         frame.setVisible(true);
         frame.setTitle("Word prediction");
 
+
     }
 
     private void createGUI() throws IOException {
