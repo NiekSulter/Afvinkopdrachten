@@ -56,6 +56,11 @@ public class Paard {
         return this.plaatje;
     }
 
+    @Override
+    public String toString() {
+        return "Paard " + naam;
+    }
+
     /**
      * Laat het paard een willekeurig aantal posities lopen
      * Verhoog de x met een waarde tussen 0 en 11
