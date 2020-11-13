@@ -1,17 +1,12 @@
-public class NoValidSeq extends Exception{
-    public NoValidSeq() {
+import javax.swing.*;
 
-    }
-
-    public NoValidSeq(String message) {
-        super (message);
-    }
-
-    public NoValidSeq(Throwable cause) {
-        super (cause);
-    }
-
-    public NoValidSeq(String message, Throwable cause) {
-        super(message, cause);
+/**
+ * Exception gemaakt om verkeerde sequenties af te vangen.
+ * @author Niek Sülter
+ */
+public class NoValidSeq extends Exception {
+    public NoValidSeq(String error) {
+        super(error);
+        JOptionPane.showMessageDialog(null, error, "ERROR", JOptionPane.ERROR_MESSAGE);
     }
 }
